@@ -1,0 +1,20 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    image: mattiashem/logger:v1.1
+    environment:
+      - KAFKA=redpanda:9092
+      - KAFKA_TOPIC=events
+      - KAFKA_TOPIC_ERROR=events_error
+
+    volumes:
+      - ./code:/app/code
+    networks:
+      - mantiser
+networks:
+  mantiser:
+    external: true

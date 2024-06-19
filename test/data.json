@@ -1,0 +1,43 @@
+{
+    "sender": "app",
+    "version": "1.0",
+    "source": "client",
+    "tags": [
+        "market",
+        "mobile"
+    ],
+    "data": [
+        {
+            "name": "Crescent",
+            "mass": 10000,
+            "position_x": 0,
+            "position_y": 0,
+            "velocity_x": 0.000001,
+            "velocity_y": 0.000001,
+            "required_thrust_to_move": 0,
+            "starting_planet": true,
+            "respawn": true,
+            "start_destroyed": false,
+            "min_spawn_delay": 0,
+            "max_spawn_delay": 0,
+            "planet": {
+                "seed": 0,
+                "radius": 300,
+                "heightRange": 0,
+                "waterHeight": 0,
+                "waterDepth": 100,
+                "temperature": 100,
+                "metalDensity": 50,
+                "metalClusters": 50,
+                "biomeScale": 50,
+                "biome": "earth",
+                "symmetryType": "terrain and CSG",
+                "symmetricalMetal": true,
+                "symmetricalStarts": true,
+                "numArmies": 0,
+                "landingZonesPerArmy": 0,
+                "landingZoneSize": 100
+            }
+        }
+    ]
+}
